@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head><base href="http://mozillapopcorn.org/maker/./layouts/basic/template.html">
+    <script src="../../lib/popcorn/popcorn.js"></script>
+    <script src="../../lib/popcorn/popcorn.youtube.js"></script>
+    <script src="../../lib/popcorn/popcorn.vimeo.js"></script>
+    <script src="../../lib/popcorn/popcorn.soundcloud.js"></script>
+    <script src="../../lib/popcorn/popcorn.image.js"></script>
+    <script src="../../lib/popcorn/popcorn.footnote.js"></script>
+    <script src="../../lib/popcorn/popcorn.twitter.js"></script>
+    <script src="../../lib/popcorn/popcorn.subtitle.js"></script>
+    <script src="../../lib/popcorn/popcorn.attribution.js"></script>
+    <script src="../../lib/popcorn/popcorn.flickr.js"></script>
+    <script src="../../lib/popcorn/popcorn.webpage.js"></script>
+    <script src="../../lib/popcorn/popcorn.wikipedia.js"></script>
+    <script src="../../lib/popcorn/popcorn.googlemap.js"></script>
+    <script src="../../butter/src/previewer/butter.previewer.js"></script>
+  <style>
+    #main, .content-div {
+      float: left;
+    }
+
+    .content-div {
+      min-width: 200px;
+      min-height: 200px;
+      border: 3px solid #000;
+      margin: 5px;
+    }
+
+    .container-div {
+      float: left;
+      text-align: center;
+      font-family: helvetica;
+      font-style: bold;
+    }
+    
+    #main {
+      min-width: 300px;
+      min-height: 200px;
+    }
+  </style><script>
+document.addEventListener('DOMContentLoaded',function(e){
+var popcorn = Popcorn.youtube( 'main', 'http://youtu.be/jzeAgq-Grs4' );
+popcorn.text({
+start:'0',
+end:'8.458256029684602',
+text:'undefined',
+target:'text-container'});
+popcorn.googlemap({
+start:'8.109461966604824',
+end:'20.578849721706867',
+target:'map-container',
+type:'undefined',
+zoom:'8',
+lat:'undefined',
+lng:'undefined',
+location:'undefined',
+heading:'undefined',
+pitch:'undefined'});
+popcorn.wikipedia({
+start:'19.881261595547308',
+end:'33.13543599257885',
+lang:'en',
+src:'undefined',
+title:'undefined',
+numberofwords:'200',
+target:'wikipedia-container'});
+
+},false);</script></head>
+  <body>
+    <div id="main" data-butter="media"></div>
+    <div class="container-div">
+    <div class="content-div" data-butter="target" id="Area1"></div><p>Area 1</p></div>
+    <div class="container-div">
+    <div class="content-div" data-butter="target" id="Area2"></div><p>Area 2</p></div>
+  
+
+</body>
+</html>
