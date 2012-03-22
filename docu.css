@@ -1,0 +1,13 @@
+body {
+    margin-left: 200px;
+    margin-right: 200px;
+    padding:0;
+    
+    font-size: 18px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:normal;
+    color: black;
+    background-image: url('back2.jpg');
+    background-repeat:no-repeat;
+    background-position: center top;
+}

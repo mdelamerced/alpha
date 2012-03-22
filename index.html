@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Demo</title>
+        <link rel="stylesheet" type="text/css" href="docu.css"/>
+         <script src="popcorn.js"></script>
+ 
+  <!-- You must include each plug-in needed for the demo individually. Ensure the path is correct -->
+  <!-- Footnote Plugin -->
+  <script src="plugins/footnote/popcorn.footnote.js"></script>
+
+  <!-- Subtitle Plugin -->
+  <script src="plugins/subtitle/popcorn.subtitle.js"></script>
+</head>
+
+<body>
+    <h1>Demo</h1>
+    <p>Best viewed in Safari for now</p>
+   
+  <!-- You need a video element with an id -->
+  <video id='video' 
+    controls 
+    width= '720px'
+   // poster="poster.png"> 
+    <source id='mp4'
+      src="pnp.mp4"
+      type='video/mp4; codecs="avc1, mp4a"'> 
+    <source id='webm'
+      src="pnp.webm"
+      type='video/ogg; codecs="theora, vorbis"'> 
+    <p>Your user agent does not support the HTML5 Video element.</p> 
+  </video> 
+  <!-- this is needed for the footnote plugin -->
+  <div id="footnotediv"></div>
+</body>
+</html>
+
+
