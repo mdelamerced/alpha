@@ -1,0 +1,42 @@
+ <!doctype html>
+    <html>
+      <head>
+        <title>The Lone Cypress Tree</title>
+        <link rel="stylesheet" type="text/css" href="docu.css"/>
+        <script src="http://popcornjs.org/code/dist/popcorn-complete.min.js"></script>
+        <script>
+          // ensure the web page (DOM) has loaded
+          document.addEventListener("DOMContentLoaded", function () {
+
+          // Create a popcorn instance by calling Popcorn("#id-of-my-video")
+          var pop = Popcorn("#ourvideo");
+
+//Add the map command
+           pop.googlemap({
+    start: 3, // Our start time in seconds
+    end: 10, // Our end time in seconds
+    type: "SATELLITE", //
+    target: "googlemap", // The id of our target DoM element
+    lat: 37.0625,-95.677068
+    long: 42.581364,9
+     location: "Pebble Beach, CA", // The location we want our map to display at
+     zoom: 3 // Setting the zoom that we would like
+            });
+
+            // play the video right away
+            pop.play();
+
+          }, false);
+        </script>
+      </head>
+      <body>
+        
+       <video height="180" width="300" id="ourvideo">
+          <source src="http://itp.nyu.edu/~mdm532/docu/cypress.mp4"></source>
+          <source src="/cypress.ogv"></source>
+          <source src="http://itp.nyu.edu/~mdm532/docu/cypress.webm"></source>
+        </video>
+        <div id="googlemap"></div>
+      </body>
+    </html>
+
